@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtCustomDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Result"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/rgCaseOption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+       app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCustomDialog"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/rbCan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAN"
+             />
+
+        <RadioButton
+            android:id="@+id/rbUsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USA"
+             />
+
+        <RadioButton
+            android:id="@+id/rbUk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UK"
+             />
+
+        <RadioButton
+            android:id="@+id/rbChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHI"
+            />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
